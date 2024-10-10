@@ -1,0 +1,35 @@
+{
+    "name": "flutter_bloc_tdd_clean_architecture",
+    "short_name": "flutter_bloc_tdd_clean_architecture",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "🚀 A comprehensive guide to mastering Flutter with BLoC state management, Test-Driven Development (TDD), and Clean Architecture. This repository showcases how to build scalable, maintainable, and testable applications by applying best practices and solid design principles. Explore how to structure your app using BLoC, write effective unit and widget tests, and implement Clean Architecture to keep your codebase clean and organized.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
