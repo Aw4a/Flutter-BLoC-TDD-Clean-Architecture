@@ -64,7 +64,19 @@ flutter test
 
 ## 📂 Folder Structure
 
-(Folder structure to be determined)
+```
+lib/
+├── core/
+│   ├── common/
+│   │   ├── views/
+│   │── res/
+│   │── services/
+├── src/
+│   ├── on_boarding/
+│       ├── src/
+```
+
+(More to be added in the future)
 
 ## 🛠️ Features
 
