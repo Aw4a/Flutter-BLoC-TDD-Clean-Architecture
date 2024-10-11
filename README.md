@@ -5,36 +5,36 @@ Welcome to the **Flutter BLoC TDD & Clean Architecture** repository! This projec
 ## 📦 Packages Used
 
 ### Dependencies:
-- flutter
-- cupertino_icons: ^1.0.8
-- bloc: ^8.1.4
-- flutter_bloc: ^8.1.6
-- dartz: ^0.10.1
-- equatable: ^2.0.5
-- file_picker: ^8.1.2
-- font_awesome_flutter: ^10.7.0
-- get_it: ^8.0.0
-- iconly: ^1.0.1
-- image_picker: ^1.1.2
-- intl: ^0.19.0
-- lottie: ^3.0.0
-- open_file: ^3.5.8
-- path_provider: ^2.1.4
-- provider: ^6.1.2
-- shared_preferences: ^2.3.2
-- smooth_page_indicator: ^1.2.0+3
-- swipe_to: ^1.0.6
-- url_launcher: ^6.3.1
-- youtube_metadata: ^1.0.1
-- video_thumbnail: ^0.5.3
-- chewie: ^1.8.5
+
+[![bloc: version](https://img.shields.io/badge/bloc-^8.1.4-blue.svg)](https://pub.dev/packages/bloc)
+[![flutter_bloc: version](https://img.shields.io/badge/flutter__bloc-^8.1.6-blue.svg)](https://pub.dev/packages/flutter_bloc)
+[![dartz: version](https://img.shields.io/badge/dartz-^0.10.1-blue.svg)](https://pub.dev/packages/dartz)
+[![equatable: version](https://img.shields.io/badge/equatable-^2.0.5-blue.svg)](https://pub.dev/packages/equatable)
+[![file_picker: version](https://img.shields.io/badge/file__picker-^8.1.2-blue.svg)](https://pub.dev/packages/file_picker)
+[![font_awesome_flutter: version](https://img.shields.io/badge/font__awesome__flutter-^10.7.0-blue.svg)](https://pub.dev/packages/font_awesome_flutter)
+[![get_it: version](https://img.shields.io/badge/get__it-^8.0.0-blue.svg)](https://pub.dev/packages/get_it)
+[![iconly: version](https://img.shields.io/badge/iconly-^1.0.1-blue.svg)](https://pub.dev/packages/iconly)
+[![image_picker: version](https://img.shields.io/badge/image__picker-^1.1.2-blue.svg)](https://pub.dev/packages/image_picker)
+[![intl: version](https://img.shields.io/badge/intl-^0.19.0-blue.svg)](https://pub.dev/packages/intl)
+[![lottie: version](https://img.shields.io/badge/lottie-^3.0.0-blue.svg)](https://pub.dev/packages/lottie)
+[![open_file: version](https://img.shields.io/badge/open__file-^3.5.8-blue.svg)](https://pub.dev/packages/open_file)
+[![path_provider: version](https://img.shields.io/badge/path__provider-^2.1.4-blue.svg)](https://pub.dev/packages/path_provider)
+[![provider: version](https://img.shields.io/badge/provider-^6.1.2-blue.svg)](https://pub.dev/packages/provider)
+[![shared_preferences: version](https://img.shields.io/badge/shared__preferences-^2.3.2-blue.svg)](https://pub.dev/packages/shared_preferences)
+[![smooth_page_indicator: version](https://img.shields.io/badge/smooth__page__indicator-^1.2.0+3-blue.svg)](https://pub.dev/packages/smooth_page_indicator)
+[![swipe_to: version](https://img.shields.io/badge/swipe__to-^1.0.6-blue.svg)](https://pub.dev/packages/swipe_to)
+[![url_launcher: version](https://img.shields.io/badge/url__launcher-^6.3.1-blue.svg)](https://pub.dev/packages/url_launcher)
+[![youtube_metadata: version](https://img.shields.io/badge/youtube__metadata-^1.0.1-blue.svg)](https://pub.dev/packages/youtube_metadata)
+[![video_thumbnail: version](https://img.shields.io/badge/video__thumbnail-^0.5.3-blue.svg)](https://pub.dev/packages/video_thumbnail)
+[![chewie: version](https://img.shields.io/badge/chewie-^1.8.5-blue.svg)](https://pub.dev/packages/chewie)
 
 ### Dev Dependencies:
-- flutter_test
-- flutter_lints: ^4.0.0
-- bloc_test: ^9.1.7
-- mocktail: ^1.0.4
-- [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
+
+[![flutter_test: version](https://img.shields.io/badge/flutter__test-^-blue.svg)](https://pub.dev/packages/flutter_test)
+[![flutter_lints: version](https://img.shields.io/badge/flutter__lints-^4.0.0-blue.svg)](https://pub.dev/packages/flutter_lints)
+[![bloc_test: version](https://img.shields.io/badge/bloc__test-^9.1.7-blue.svg)](https://pub.dev/packages/bloc_test)
+[![mocktail: version](https://img.shields.io/badge/mocktail-^1.0.4-blue.svg)](https://pub.dev/packages/mocktail)
+[![very_good_analysis: version](https://img.shields.io/badge/style-very__good__analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 
 ## 📑 Getting Started
 
