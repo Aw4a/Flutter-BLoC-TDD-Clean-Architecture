@@ -69,11 +69,26 @@ lib/
 ├── core/
 │   ├── common/
 │   │   ├── views/
-│   │── res/
-│   │── services/
+│   ├── errors/
+│   ├── res/
+│   ├── services/
+│   ├── usecases/
+│   ├── utils/
 ├── src/
 │   ├── on_boarding/
-│       ├── src/
+│       ├── domain/
+│       │   ├── repos/
+│       │   ├── usecases/
+│       ├── presentations/
+
+test/
+├── src/
+│   ├── on_boarding/
+│       ├── domain/
+│           ├── usecases/
+│               ├── cache_first_timer_test/
+│               ├── check_if_user_is_first_timer_test/
+│               ├── on_boarding_repo_mock/
 ```
 
 (More to be added in the future)
