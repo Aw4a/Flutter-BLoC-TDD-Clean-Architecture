@@ -6,12 +6,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case OnBoardingScreen.routeName:
       return _pageBuilder(
-            (_) => const OnBoardingScreen(),
+        (_) => const OnBoardingScreen(),
         settings: settings,
       );
     default:
       return _pageBuilder(
-            (_) => const PageUnderConstruction(),
+        (_) => const PageUnderConstruction(),
         settings: settings,
       );
   }

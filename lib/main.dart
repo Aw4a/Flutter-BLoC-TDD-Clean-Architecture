@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         colorScheme: ColorScheme.fromSwatch(accentColor: c.Colors.primaryBase),
       ),
-        onGenerateRoute : generateRoute,
+      onGenerateRoute: generateRoute,
     );
   }
 }

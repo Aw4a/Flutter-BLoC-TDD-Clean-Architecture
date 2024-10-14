@@ -17,9 +17,9 @@ void main() {
 
   test(
     'should get a response from the [MockOnBoardingRepo]',
-        () async {
+    () async {
       when(() => repo.checkIfUserIsFirstTimer()).thenAnswer(
-            (_) async => const Right(true),
+        (_) async => const Right(true),
       );
       final result = await usecase();
       expect(

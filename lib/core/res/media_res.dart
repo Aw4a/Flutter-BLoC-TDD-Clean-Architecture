@@ -35,13 +35,18 @@ class MediaRes {
   // Images
   static const _baseImages = 'assets/images';
 
-  static const authGradientBackground = '$_baseImages/auth_gradient_background.png';
+  static const authGradientBackground =
+      '$_baseImages/auth_gradient_background.png';
   static const defaultUser = '$_baseImages/default_user.png';
-  static const documentsGradientBackground = '$_baseImages/documents_gradient_background.png';
-  static const homeGradientBackground = '$_baseImages/home_gradient_background.png';
-  static const leaderboardGradientBackground = '$_baseImages/leaderboard_gradient_background.png';
+  static const documentsGradientBackground =
+      '$_baseImages/documents_gradient_background.png';
+  static const homeGradientBackground =
+      '$_baseImages/home_gradient_background.png';
+  static const leaderboardGradientBackground =
+      '$_baseImages/leaderboard_gradient_background.png';
   static const onBoardingBackground = '$_baseImages/onBoarding_background.png';
-  static const profileGradientBackground = '$_baseImages/profile_gradient_background.png';
+  static const profileGradientBackground =
+      '$_baseImages/profile_gradient_background.png';
   static const videoPlaceholder = '$_baseImages/video_placeholder.png';
 
   // Vectors
@@ -50,7 +55,8 @@ class MediaRes {
   static const bluePotPlant = '$_baseVectors/blue_pot_plant.png';
   static const casualLife = '$_baseVectors/casual_life.png';
   static const casualMeditation = '$_baseVectors/casual_meditation.png';
-  static const casualMeditationScience = '$_baseVectors/casual_meditation_science.png';
+  static const casualMeditationScience =
+      '$_baseVectors/casual_meditation_science.png';
   static const casualReading = '$_baseVectors/casual_reading.png';
   static const microscopeVector = '$_baseVectors/microscope.png';
   static const steamCup = '$_baseVectors/steam_cup.png';
@@ -61,5 +67,6 @@ class MediaRes {
 
   static const emptyLeaderboard = '$_baseLottie/empty_leaderboard.json';
   static const noNotifications = '$_baseLottie/no_notifications.json';
-  static const pageUnderConstruction = '$_baseLottie/page_under_construction.json';
+  static const pageUnderConstruction =
+      '$_baseLottie/page_under_construction.json';
 }
