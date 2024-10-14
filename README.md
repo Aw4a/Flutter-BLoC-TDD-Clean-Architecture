@@ -66,29 +66,58 @@ flutter test
 
 ```
 lib/
-├── core/
-│   ├── common/
-│   │   ├── views/
-│   ├── errors/
-│   ├── res/
-│   ├── services/
-│   ├── usecases/
-│   ├── utils/
-├── src/
-│   ├── on_boarding/
-│       ├── domain/
-│       │   ├── repos/
-│       │   ├── usecases/
-│       ├── presentations/
+    ├── core
+        ├── common
+            ├── views
+                ├── page_under_construction.dart
+        ├── errors
+            ├── exceptions.dart
+            ├── failure.dart
+        ├── res
+            ├── colors.dart
+            ├── font.dart
+            ├── media_res.dart
+            ├── typography.dart
+        ├── services
+            ├── router.dart
+        ├── usecases
+            ├── usecases.dart
+        ├── utils
+            ├── typdefs.dart
+    ├── main.dart
+    ├── src
+        ├── on_boarding
+            ├── data
+                ├── datasources
+                    ├── on_boarding_local_data_source.dart
+                ├── repos
+                    ├── on_boarding_repo_impl.dart
+            ├── domain
+                ├── entities
+                    ├── page_content.dart
+                ├── repos
+                    ├── on_boarding_repo.dart
+                ├── usecases
+                    ├── cache_first_timer.dart
+                    ├── check_if_user_is_first_timer.dart
+            ├── presentations
+                ├── on_boarding_screen.dart
 
+```
+
+```
 test/
-├── src/
-│   ├── on_boarding/
-│       ├── domain/
-│           ├── usecases/
-│               ├── cache_first_timer_test/
-│               ├── check_if_user_is_first_timer_test/
-│               ├── on_boarding_repo_mock/
+    ├── src
+        ├── on_boarding
+            ├── data
+                ├── repos
+                    ├── on_boarding_repo_impl_test.dart
+            ├── domain
+                ├── usecases
+                    ├── cache_first_timer_test.dart
+                    ├── check_if_user_is_first_timer_test.dart
+                    ├── on_boarding_repo_mock.dart
+
 ```
 
 (More to be added in the future)
