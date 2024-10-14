@@ -64,10 +64,13 @@ flutter test
 
 ## 📂 Folder Structure
 
-<details>
-  <summary>The folder structure</summary>
+<!-- FOLDER_STRUCTURE_START -->
 
-```
+
+<details>
+  <summary>Click to expand/collapse lib folder structure</summary>
+
+  ```
 lib/
     ├── core
         ├── common
@@ -107,7 +110,14 @@ lib/
                 ├── on_boarding_screen.dart
 ```
 
-```
+</details>
+
+
+
+<details>
+  <summary>Click to expand/collapse test folder structure</summary>
+
+  ```
 test/
     ├── src
         ├── on_boarding
@@ -121,7 +131,14 @@ test/
                     ├── on_boarding_repo_mock.dart
 ```
 
-```
+</details>
+
+
+
+<details>
+  <summary>Click to expand/collapse assets folder structure</summary>
+
+  ```
 assets/
     ├── fonts
         ├── aeonik
@@ -202,9 +219,12 @@ assets/
         ├── turquoise_pot_plant.png
 ```
 
+</details>
+
+
 (More to be added in the future)
 
-</details>
+<!-- FOLDER_STRUCTURE_END -->
 
 ## 🛠️ Features
 

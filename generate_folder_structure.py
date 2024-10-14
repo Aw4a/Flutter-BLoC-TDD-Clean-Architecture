@@ -7,7 +7,7 @@ READ_ME_PATH = "README.md"
 DIRECTORIES = {
     "lib": "./lib",
     "test": "./test",
-    "assets": "./assets",
+    "assets": "./assets"
 }
 
 def generate_folder_structure(path: str, indent: int = 0) -> str:
@@ -26,14 +26,34 @@ def generate_folder_structure(path: str, indent: int = 0) -> str:
     except FileNotFoundError:
         return f"{' ' * indent}# Directory not found: {path}\n"
 
-    structure = ""
+    structure_lines = []
     for item in items:
         if not item.startswith("."):  # Ignore hidden files and directories
-            structure += f"{' ' * indent}├── {item}\n"
+            structure_lines.append(f"{' ' * indent}├── {item}")
             full_path = os.path.join(path, item)
             if os.path.isdir(full_path):
-                structure += generate_folder_structure(full_path, indent + INDENTATION_LEVEL)
-    return structure
+                structure_lines.append(generate_folder_structure(full_path, indent + INDENTATION_LEVEL))
+    return "\n".join(structure_lines)
+
+def create_collapsible_section(title: str, content: str) -> str:
+    """
+    Creates a collapsible HTML section for GitHub README.
+
+    Args:
+        title (str): The title of the collapsible section.
+        content (str): The content inside the collapsible section.
+
+    Returns:
+        str: A formatted string with HTML <details> and <summary> tags.
+    """
+    return f"""
+<details>
+  <summary>{title}</summary>
+
+  {content}
+
+</details>
+"""
 
 def update_readme_with_structure(readme_path: str, structure: str) -> None:
     """
@@ -50,41 +70,45 @@ def update_readme_with_structure(readme_path: str, structure: str) -> None:
         print(f"Error: README file '{readme_path}' not found.")
         return
 
-    updated_lines = []
-    inside_structure = False
-    for line in lines:
-        if line.strip() == "## 📂 Folder Structure":
-            inside_structure = True
-            updated_lines.append(line)
-            updated_lines.append(
-                """
-<details>
-  <summary>Click to expand/collapse the folder structure</summary>
+    # Check for the existence of start and end markers
+    start_marker = "<!-- FOLDER_STRUCTURE_START -->"
+    end_marker = "<!-- FOLDER_STRUCTURE_END -->"
 
-"""
-            )
-            updated_lines.append("\n" + structure + "\n")
-            updated_lines.append("</details>\n")
-        elif inside_structure and line.strip().startswith("```"):
-            inside_structure = False
-        elif not inside_structure:
-            updated_lines.append(line)
+    start_index, end_index = None, None
+    for index, line in enumerate(lines):
+        if start_marker in line.strip():  # Use strip() to ignore leading/trailing whitespace
+            start_index = index
+        elif end_marker in line.strip():
+            end_index = index
+
+    if start_index is None or end_index is None or start_index >= end_index:
+        print(f"Error: Markers '{start_marker}' and '{end_marker}' not found or incorrectly placed in README.md.")
+        return
+
+    # Replace the content between the markers, keeping the markers themselves intact
+    updated_lines = (
+        lines[:start_index + 1]
+        + ["\n", structure, "\n"]
+        + lines[end_index:]
+    )
 
     with open(readme_path, "w", encoding="utf-8") as file:
         file.writelines(updated_lines)
+    print("README.md has been successfully updated with the latest folder structure.")
 
 if __name__ == "__main__":
     # Generate folder structure for each specified directory
     folder_structure_parts = []
     for dir_name, dir_path in DIRECTORIES.items():
         if os.path.exists(dir_path):
-            folder_structure_parts.append(f"```\n{dir_name}/\n{generate_folder_structure(dir_path, INDENTATION_LEVEL)}```\n")
+            folder_structure = generate_folder_structure(dir_path, INDENTATION_LEVEL)
+            folder_structure_parts.append(create_collapsible_section(f"Click to expand/collapse {dir_name} folder structure", f"```\n{dir_name}/\n{folder_structure}\n```"))
         else:
-            folder_structure_parts.append(f"```\n{dir_name}/\n# Directory not found\n```\n")
+            folder_structure_parts.append(create_collapsible_section(f"Click to expand/collapse {dir_name} folder structure", f"```\n{dir_name}/\n# Directory not found\n```"))
 
-    # Combine the folder structures
-    folder_structure = "\n".join(folder_structure_parts)
-    folder_structure += "(More to be added in the future)\n\n"
+    # Combine all folder structures
+    folder_structure_combined = "\n\n".join(folder_structure_parts)
+    folder_structure_combined += "\n\n(More to be added in the future)\n"
 
     # Update the README.md file with the generated structure
-    update_readme_with_structure(READ_ME_PATH, folder_structure)
+    update_readme_with_structure(READ_ME_PATH, folder_structure_combined)
