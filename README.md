@@ -64,6 +64,9 @@ flutter test
 
 ## 📂 Folder Structure
 
+<details>
+  <summary>The folder structure</summary>
+
 ```
 lib/
     ├── core
@@ -102,7 +105,6 @@ lib/
                     ├── check_if_user_is_first_timer.dart
             ├── presentations
                 ├── on_boarding_screen.dart
-
 ```
 
 ```
@@ -117,10 +119,92 @@ test/
                     ├── cache_first_timer_test.dart
                     ├── check_if_user_is_first_timer_test.dart
                     ├── on_boarding_repo_mock.dart
+```
 
+```
+assets/
+    ├── fonts
+        ├── aeonik
+            ├── AeonikTRIAL-Bold.otf
+            ├── AeonikTRIAL-BoldItalic.otf
+            ├── AeonikTRIAL-Light.otf
+            ├── AeonikTRIAL-LightItalic.otf
+            ├── AeonikTRIAL-Regular.otf
+            ├── AeonikTRIAL-RegularItalic.otf
+        ├── poppins
+            ├── Poppins-Black.ttf
+            ├── Poppins-BlackItalic.ttf
+            ├── Poppins-Bold.ttf
+            ├── Poppins-BoldItalic.ttf
+            ├── Poppins-ExtraBold.ttf
+            ├── Poppins-ExtraBoldItalic.ttf
+            ├── Poppins-ExtraLight.ttf
+            ├── Poppins-ExtraLightItalic.ttf
+            ├── Poppins-Italic.ttf
+            ├── Poppins-Light.ttf
+            ├── Poppins-LightItalic.ttf
+            ├── Poppins-Medium.ttf
+            ├── Poppins-MediumItalic.ttf
+            ├── Poppins-Regular.ttf
+            ├── Poppins-SemiBold.ttf
+            ├── Poppins-SemiBoldItalic.ttf
+            ├── Poppins-Thin.ttf
+            ├── Poppins-ThinItalic.ttf
+    ├── icons
+        ├── atom.png
+        ├── bronze_medal.png
+        ├── calculator.png
+        ├── course.png
+        ├── course_info_exam.png
+        ├── course_info_material.png
+        ├── course_info_video.png
+        ├── crown.png
+        ├── dart.svg
+        ├── dna.png
+        ├── document.png
+        ├── exam_time.png
+        ├── exam_time_red.png
+        ├── flask.png
+        ├── json.png
+        ├── microscope.png
+        ├── questions_document.png
+        ├── scoreboard.png
+        ├── silver_medal.png
+        ├── subscription_month.png
+        ├── subscription_year.png
+        ├── test.png
+        ├── translation.png
+        ├── user.png
+        ├── video.png
+        ├── write.png
+        ├── youtube.png
+    ├── images
+        ├── auth_gradient_background.png
+        ├── default_user.png
+        ├── documents_gradient_background.png
+        ├── home_gradient_background.png
+        ├── leaderboard_gradient_background.png
+        ├── onBoarding_background.png
+        ├── profile_gradient_background.png
+        ├── video_placeholder.png
+    ├── lottie
+        ├── empty_leaderboard.json
+        ├── no_notifications.json
+        ├── page_under_construction.json
+    ├── vectors
+        ├── blue_pot_plant.png
+        ├── casual_life.png
+        ├── casual_meditation.png
+        ├── casual_meditation_science.png
+        ├── casual_reading.png
+        ├── microscope.png
+        ├── steam_cup.png
+        ├── turquoise_pot_plant.png
 ```
 
 (More to be added in the future)
+
+</details>
 
 ## 🛠️ Features
 
