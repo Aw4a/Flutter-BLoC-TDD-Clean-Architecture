@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc_tdd_clean_architecture/core/common/views/page_under_construction.dart';
-import 'package:flutter_bloc_tdd_clean_architecture/src/on_boarding/presentations/on_boarding_screen.dart';
+import 'package:flutter_bloc_tdd_clean_architecture/src/on_boarding/presentations/views/on_boarding_screen.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {

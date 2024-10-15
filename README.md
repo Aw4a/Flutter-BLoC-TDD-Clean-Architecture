@@ -107,7 +107,11 @@ lib/
                     ├── cache_first_timer.dart
                     ├── check_if_user_is_first_timer.dart
             ├── presentations
-                ├── on_boarding_screen.dart
+                ├── cubit
+                    ├── on_boarding_cubit.dart
+                    ├── on_boarding_state.dart
+                ├── views
+                    ├── on_boarding_screen.dart
 ```
 
 </details>
@@ -131,6 +135,9 @@ test/
                     ├── cache_first_timer_test.dart
                     ├── check_if_user_is_first_timer_test.dart
                     ├── on_boarding_repo_mock.dart
+            ├── presentations
+                ├── cubit
+                    ├── on_boarding_cubit_test.dart
 ```
 
 </details>
