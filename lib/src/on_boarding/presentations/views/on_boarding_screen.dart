@@ -69,11 +69,13 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       );
                     },
                     effect: const WormEffect(
+                      paintStyle: PaintingStyle.stroke,
+                      type: WormType.thin,
                       dotHeight: 9,
                       dotWidth: 9,
-                      spacing: 39,
+                      spacing: 19,
                       activeDotColor: AppColors.primaryBase,
-                      dotColor: AppColors.neutral200,
+                      dotColor: AppColors.neutral100,
                     ),
                   ),
                 ),

@@ -6,6 +6,7 @@ import 'package:flutter_bloc_tdd_clean_architecture/core/res/colors.dart';
 import 'package:flutter_bloc_tdd_clean_architecture/core/res/typography.dart';
 import 'package:flutter_bloc_tdd_clean_architecture/src/on_boarding/domain/entities/page_content.dart';
 import 'package:flutter_bloc_tdd_clean_architecture/src/on_boarding/presentations/cubit/on_boarding_cubit.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnBoardingBody extends StatelessWidget {
   const OnBoardingBody({required this.pageContent, super.key});
@@ -48,6 +49,7 @@ class OnBoardingBody extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 100),
               child: AppButton(
                 text: 'Get Started',
+                width: 200.w,
                 onPressed: () => {
                   context.read<OnBoardingCubit>().cacheFirstTimer(),
                 },

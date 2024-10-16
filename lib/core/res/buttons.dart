@@ -103,12 +103,12 @@ class AppButton extends StatelessWidget {
         gradient: gradient,
         borderRadius: BorderRadius.circular(50),
         boxShadow: [
-          BoxShadow(
-            color: Colors.white.withOpacity(1), // White shadow with 50% opacity
-            spreadRadius: 10, // How much the shadow spreads
-            blurRadius: 5, // Blurriness of the shadow
-            offset: const Offset(0, 20), // Position of the shadow (x, y)
-          ),
+          // BoxShadow(
+          //   color: Colors.white.withOpacity(1), // White shadow with 50% opacity
+          //   spreadRadius: 10, // How much the shadow spreads
+          //   blurRadius: 5, // Blurriness of the shadow
+          //   offset: const Offset(0, 20), // Position of the shadow (x, y)
+          // ),
         ],
       ),
       child: SizedBox(
