@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc_tdd_clean_architecture/main.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FontTextStyle {
   // static String getFontFamily(String languageCode) {
@@ -13,66 +15,66 @@ class FontTextStyle {
   // }
 
   // Heading Styles
-  static TextStyle h1({required String languageCode, Color? color}) {
+  static TextStyle h1({Color? color}) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 64,
-      height: 56 / 64,
+      fontSize: 64.sp,
+      height: 56 / 57,
       letterSpacing: -1 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins', // getFontFamily\(languageCode\)
     );
   }
 
-  static TextStyle h2({required String languageCode, Color? color}) {
+  static TextStyle h2({Color? color}) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 48,
-      height: 48 / 56,
+      fontSize: 48.sp,
+      height: 48 / 49,
       letterSpacing: -1 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
     );
   }
 
-  static TextStyle h3({required String languageCode, Color? color}) {
+  static TextStyle h3({Color? color}) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 40,
-      height: 40 / 48,
+      fontSize: 40.sp,
+      height: 40 / 41,
       letterSpacing: -1 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
     );
   }
 
-  static TextStyle h4({required String languageCode, Color? color}) {
+  static TextStyle h4({Color? color}) {
     return TextStyle(
-      fontWeight: FontWeight.w500,
-      fontSize: 32,
-      height: 32 / 40,
+      fontWeight: FontWeight.w600,
+      fontSize: 32.sp,
+      height: 32 / 33,
       letterSpacing: 0,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
     );
   }
 
-  static TextStyle h5({required String languageCode, Color? color}) {
+  static TextStyle h5({Color? color}) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 24,
-      height: 24 / 32,
+      fontSize: 24.sp,
+      height: 24 / 25,
       letterSpacing: 0,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
     );
   }
 
-  static TextStyle h6({required String languageCode, Color? color}) {
+  static TextStyle h6({Color? color}) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 20,
-      height: 20 / 28,
+      fontSize: 20.sp,
+      height: 20 / 21,
       letterSpacing: 0,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
@@ -80,55 +82,55 @@ class FontTextStyle {
   }
 
   // Label Styles
-  static TextStyle labelXLarge({required String languageCode, Color? color}) {
+  static TextStyle labelXLarge({Color? color}) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 24,
-      height: 24 / 32,
+      fontSize: 24.sp,
+      height: 24 / 25,
       letterSpacing: -1.5 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
     );
   }
 
-  static TextStyle labelLarge({required String languageCode, Color? color}) {
+  static TextStyle labelLarge({Color? color}) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 18,
-      height: 18 / 24,
+      fontSize: 18.sp,
+      height: 18 / 19,
       letterSpacing: -1.5 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
     );
   }
 
-  static TextStyle labelMedium({required String languageCode, Color? color}) {
+  static TextStyle labelMedium({Color? color}) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 16,
-      height: 16 / 24,
+      fontSize: 16.sp,
+      height: 16 / 17,
       letterSpacing: -1.1 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
     );
   }
 
-  static TextStyle labelSmall({required String languageCode, Color? color}) {
+  static TextStyle labelSmall({Color? color}) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 14,
-      height: 14 / 20,
+      fontSize: 14.sp,
+      height: 14 / 15,
       letterSpacing: -0.6 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
     );
   }
 
-  static TextStyle labelXSmall({required String languageCode, Color? color}) {
+  static TextStyle labelXSmall({Color? color}) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 12,
-      height: 12 / 16,
+      fontSize: 12.sp,
+      height: 12 / 13,
       letterSpacing: 0,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
@@ -137,13 +139,12 @@ class FontTextStyle {
 
   // Paragraph Styles
   static TextStyle paragraphXLarge({
-    required String languageCode,
     Color? color,
   }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: 24,
-      height: 24 / 32,
+      fontSize: 24.sp,
+      height: 24 / 25,
       letterSpacing: -1.5 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
@@ -151,13 +152,12 @@ class FontTextStyle {
   }
 
   static TextStyle paragraphLarge({
-    required String languageCode,
     Color? color,
   }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: 18,
-      height: 18 / 24,
+      fontSize: 18.sp,
+      height: 18 / 19,
       letterSpacing: -1.5 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
@@ -165,13 +165,12 @@ class FontTextStyle {
   }
 
   static TextStyle paragraphMedium({
-    required String languageCode,
     Color? color,
   }) {
     return TextStyle(
-      fontWeight: FontWeight.w400,
-      fontSize: 16,
-      height: 16 / 24,
+      fontWeight: FontWeight.w300,
+      fontSize: 16.sp,
+      height: 1.2,
       letterSpacing: -1.1 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
@@ -179,13 +178,12 @@ class FontTextStyle {
   }
 
   static TextStyle paragraphSmall({
-    required String languageCode,
     Color? color,
   }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: 14,
-      height: 14 / 20,
+      fontSize: 14.sp,
+      height: 14 / 15,
       letterSpacing: -0.6 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
@@ -193,13 +191,12 @@ class FontTextStyle {
   }
 
   static TextStyle paragraphXSmall({
-    required String languageCode,
     Color? color,
   }) {
     return TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: 12,
-      height: 12 / 16,
+      fontSize: 12.sp,
+      height: 12 / 13,
       letterSpacing: 0,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
@@ -208,13 +205,12 @@ class FontTextStyle {
 
   // Subheading Styles
   static TextStyle subheadingMedium({
-    required String languageCode,
     Color? color,
   }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 16,
-      height: 16 / 24,
+      fontSize: 16.sp,
+      height: 16 / 17,
       letterSpacing: 6 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
@@ -222,13 +218,12 @@ class FontTextStyle {
   }
 
   static TextStyle subheadingSmall({
-    required String languageCode,
     Color? color,
   }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 14,
-      height: 14 / 20,
+      fontSize: 14.sp,
+      height: 14 / 15,
       letterSpacing: 6 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
@@ -236,13 +231,12 @@ class FontTextStyle {
   }
 
   static TextStyle subheadingXSmall({
-    required String languageCode,
     Color? color,
   }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 12,
-      height: 12 / 16,
+      fontSize: 12.sp,
+      height: 12 / 13,
       letterSpacing: 4 / 100,
       color: color ?? Colors.black,
       fontFamily: 'Poppins',
@@ -250,12 +244,11 @@ class FontTextStyle {
   }
 
   static TextStyle subheading2XSmall({
-    required String languageCode,
     Color? color,
   }) {
     return TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 11,
+      fontSize: 11.sp,
       height: 11 / 12,
       letterSpacing: 2 / 100,
       color: color ?? Colors.black,

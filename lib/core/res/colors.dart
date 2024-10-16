@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-class Colors {
-  const Colors._();
+class AppColors {
+  const AppColors._();
 
   static const gradient = [
     Color(0xFFFDEBFF),

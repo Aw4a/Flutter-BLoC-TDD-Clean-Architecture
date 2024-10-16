@@ -34,6 +34,8 @@ dependencies:
   youtube_metadata: ^1.0.1
   video_thumbnail: ^0.5.3
   chewie: ^1.8.5
+  flutter_svg: ^2.0.9
+  flutter_screenutil: ^5.9.2
 
 dev_dependencies:
   flutter_test:

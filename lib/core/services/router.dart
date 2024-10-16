@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_tdd_clean_architecture/core/common/views/page_under_construction.dart';
+import 'package:flutter_bloc_tdd_clean_architecture/core/services/injection_container.dart';
+import 'package:flutter_bloc_tdd_clean_architecture/src/on_boarding/presentations/cubit/on_boarding_cubit.dart';
 import 'package:flutter_bloc_tdd_clean_architecture/src/on_boarding/presentations/views/on_boarding_screen.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case OnBoardingScreen.routeName:
       return _pageBuilder(
-        (_) => const OnBoardingScreen(),
+        (_) => BlocProvider(
+          create: (_) => sl<OnBoardingCubit>(),
+          child: const OnBoardingScreen(),
+        ),
         settings: settings,
       );
     default:

@@ -85,6 +85,7 @@ lib/
             ├── media_res.dart
             ├── typography.dart
         ├── services
+            ├── injection_container.dart
             ├── router.dart
         ├── usecases
             ├── usecases.dart
