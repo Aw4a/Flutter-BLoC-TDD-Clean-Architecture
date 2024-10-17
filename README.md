@@ -75,11 +75,19 @@ lib/
     ├── core
         ├── common
             ├── views
+                ├── loading_view.dart
                 ├── page_under_construction.dart
+            ├── widgets
+                ├── gradient_background.dart
+        ├── enums
+            ├── update_user.dart
         ├── errors
             ├── exceptions.dart
             ├── failure.dart
+        ├── extensions
+            ├── context_extension.dart
         ├── res
+            ├── buttons.dart
             ├── colors.dart
             ├── font.dart
             ├── media_res.dart
@@ -93,6 +101,20 @@ lib/
             ├── typdefs.dart
     ├── main.dart
     ├── src
+        ├── auth
+            ├── data
+                ├── models
+                    ├── user_model.dart
+            ├── domain
+                ├── entities
+                    ├── user.dart
+                ├── repos
+                    ├── auth_repo.dart
+                ├── usecases
+                    ├── forgot_password.dart
+                    ├── sign_in.dart
+                    ├── sign_up.dart
+                    ├── update_user.dart
         ├── on_boarding
             ├── data
                 ├── datasources
@@ -113,6 +135,8 @@ lib/
                     ├── on_boarding_state.dart
                 ├── views
                     ├── on_boarding_screen.dart
+                ├── widgets
+                    ├── on_boarding_body.dart
 ```
 
 </details>
@@ -125,6 +149,10 @@ lib/
   ```
 test/
     ├── src
+        ├── auth
+            ├── data
+                ├── models
+                    ├── user_model_test.dart
         ├── on_boarding
             ├── data
                 ├── datasources

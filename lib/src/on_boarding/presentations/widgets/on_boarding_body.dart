@@ -50,8 +50,8 @@ class OnBoardingBody extends StatelessWidget {
               child: AppButton(
                 text: 'Get Started',
                 width: 200.w,
-                onPressed: () => {
-                  context.read<OnBoardingCubit>().cacheFirstTimer(),
+                onPressed: () async {
+                  await context.read<OnBoardingCubit>().cacheFirstTimer();
                 },
               ),
             ),
